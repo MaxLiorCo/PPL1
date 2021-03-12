@@ -75,5 +75,3 @@ export const isPaired = (x: string): boolean => {
     }, { valid: true, array: [] }, parArray);
     return result.valid;
 };
-
-
