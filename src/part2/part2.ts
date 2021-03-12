@@ -1,8 +1,6 @@
-import * as R from "ramda";
-
-const stringToArray = R.split("");
-
-//blabla
+//import * as R from "ramda";
+import {reduce} from "ramda";
+//const stringToArray = R.split("");
 
 /* Question 1 */
 export const countVowels = undefined;
@@ -12,3 +10,4 @@ export const runLengthEncoding = undefined;
 
 /* Question 3 */
 export const isPaired = undefined;
+
