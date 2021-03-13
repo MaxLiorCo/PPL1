@@ -73,5 +73,5 @@ export const isPaired = (x: string): boolean => {
         let resValid: boolean = y === "-1" ? acc.valid : y === prev ? acc.valid && true : false;
         return {valid: resValid, array: resArray};
     }, { valid: true, array: [] }, parArray);
-    return result.valid;
+    return result.valid && result.array.length===0;
 };
