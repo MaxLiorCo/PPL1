@@ -36,7 +36,7 @@ const check = (x: string): string =>
 /* Question 1 */
 export const countVowels = (x: string): number => {
     let charArray = stringToArray(x.toLowerCase());
-    return R.reduce((acc, curr) => (vowelHelper(curr) ? acc + 1 : acc), 0, charArray);
+    return R.reduce((acc: number, curr: string): number => (vowelHelper(curr) ? acc + 1 : acc), 0, charArray);
     
 };
 
@@ -73,5 +73,5 @@ export const isPaired = (x: string): boolean => {
         let resValid: boolean = y === "-1" ? acc.valid : y === prev ? acc.valid && true : false;
         return {valid: resValid, array: resArray};
     }, { valid: true, array: [] }, parArray);
-    return result.valid;
+    return result.valid && result.array.length === 0;
 };
